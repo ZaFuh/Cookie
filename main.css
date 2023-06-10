@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -122,17 +123,23 @@ header {
 
 .button {
     border: solid 2px #5B584F;
-    width: 70px;
+    width: 150px;
     height: 25px;
     text-align: center;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 5%;
+    padding-Bottom: 5%;
+    color: #5B584F;
+    font-size: large;
 }
+
 
 /***********ABOUT***********/
 
 .div2 {
     height: 25vh;
-    text-align: center;
-    padding: 4% 13% 4% 13%;
+    padding: 4% 13% 6% 13%;
     background-color: #5B584F;
 }
 
@@ -146,7 +153,12 @@ header {
 
 }
 
-/**********INVENTORY**********/
+.div2 img {
+    float: right;
+    height: 100px;
+}
+
+/**********MENU**********/
 .div4 {
     background-color: #F7CD82;
 }
@@ -167,18 +179,52 @@ header {
 .div5 {
     display: flex;
     justify-content: space-between;
-    height: 40vh;
+    height: 50vh;
     padding: 2% 10% 2% 10%;
     background-image: url(./Images/testimonials-cover.jpg);
     background-size: 1500px;
 }
 
+.testimonial-card {
+    background-color: #e0d5adcc;
+    border-radius: 20px;
+    width: 275px;
+    padding: 2%;
+}
+
+.testimonial-card img {
+    height: 130px;
+    margin: 10px 60px 10px 80px;
+}
+
+.testimonial-card h3 {
+    margin-top: 50px;
+}
+
+.quotes {
+    font-size: 10vb;
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 /**********WHY WE ARE THE BEST COOKIES**********/
 .why-best {
-    height: 25vh;
+    height: 33vh;
     text-align: center;
-    padding: 4% 13% 4% 13%;
+    padding: 2% 13% 5% 13%;
     background-color: #5B584F;
+}
+
+.why-best h2 {
+    color: #E0D5AD;
+    padding-top: 2%;
+    padding-bottom: 50px;
+    font-size: 5vb;
+}
+
+.why-best p {
+    color: #E0D5AD;
+    font-size: 2.2vb;
 }
 
 /**************FIND OUT STORE*****************/
