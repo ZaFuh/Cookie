@@ -11,6 +11,10 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -89,7 +93,6 @@ header {
 
 .div12 {
     margin-top: 15%;
-    margin-bottom: 15%;
     margin-left: 5%;
     max-width: 40%;
 }
@@ -113,6 +116,8 @@ header {
     width: 250px;
     justify-content: space-around;
     margin-top: 10px;
+    margin-bottom: 90px;
+
 }
 
 .button {
@@ -122,170 +127,70 @@ header {
     text-align: center;
 }
 
-/*********** MINI ABOUT***********/
+/***********ABOUT***********/
 
 .div2 {
     height: 25vh;
     text-align: center;
-    padding: 4% 10% 4% 10%;
-    background-image: url(./Images/bg1.png);
-    font-size: larger;
+    padding: 4% 13% 4% 13%;
+    background-color: #5B584F;
 }
 
 .div2 h1 {
-    color: #bfb39b;
-    text-shadow: 2px 2px 2px #a74f57;
+    color: #E0D5AD;
+
 }
 
 .div2 p {
-    color: #bfb39b;
-    text-shadow: 2px 2px 2px #a74f57;
+    color: #E0D5AD;
+
 }
 
 /**********INVENTORY**********/
-
 .div4 {
-    height: 55vh;
-    display: block;
-    background-color: #bfb39b;
+    background-color: #F7CD82;
 }
 
-.inventory-container {
-    height: inherit;
-    padding: 3% 10% 12% 10%;
-    width: 80%;
+.card-container {
     display: flex;
-    overflow: hidden;
-
-
-}
-
-.inventory-container .items {
-    display: inline;
+    justify-content: space-between;
+    padding: 5% 20% 5% 20%;
     height: 70vh;
-    width: 40vw;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 
-.items img {
-    height: 80vh;
-
+.card-container img {
+    height: 250px;
 }
 
-.inventory-text-container {
-    width: 80%;
-    height: 55vh;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-}
-
-.inventory-text p {
-    position: absolute;
-    text-align: center;
-    display: block;
-    padding-top: 30%;
-    padding-bottom: 40%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3vb;
-    color: #d9666f;
-
-}
-
-/**********ORDER NOW**********/
+/**********TESTIMONIALS**********/
 .div5 {
     display: flex;
     justify-content: space-between;
-    background-color: #f27289;
     height: 40vh;
     padding: 2% 10% 2% 10%;
+    background-image: url(./Images/testimonials-cover.jpg);
+    background-size: 1500px;
 }
 
-.div5 img {
-    height: 40vh;
-}
-
-.ordernow-button {
+/**********WHY WE ARE THE BEST COOKIES**********/
+.why-best {
+    height: 25vh;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10%;
+    padding: 4% 13% 4% 13%;
+    background-color: #5B584F;
 }
 
-#just-space-lol {
-    height: 5vh;
+/**************FIND OUT STORE*****************/
+.find-store {
+    background-color: #F7CD82;
+    height: 60vh;
+    padding: 2% 5% 2% 5%;
 }
 
-.ordernow-button p {
-    font-size: larger;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
-.butt {
-    width: 20vw;
-    margin: 5vw 10vw 0vw 10vw;
-}
 
-.div5 button {
-    appearance: none;
-    background-color: #000000;
-    border: 2px solid #1A1A1A;
-    border-radius: 15px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    min-height: 60px;
-    min-width: 0;
-    outline: none;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 100%;
-    will-change: transform;
-}
 
-button :disabled {
-    pointer-events: none;
-}
-
-button:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-}
-
-button:active {
-    box-shadow: none;
-    transform: translateY(0);
-}
-
-.div6 {
-    padding: 7% 10% 3% 10%;
-}
-
-/**************MAP*****************/
-.map {
-    padding: 3% 10% 3% 10%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.map p {
-    padding: 13vw 0vw 12vw 0vw;
-    font-size: 5vb;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 /**********about page**********/
 .about-cover img {
@@ -361,100 +266,24 @@ div.desc {
 
 /*------FOOTER--------*/
 footer {
-    background-color: #d9666f;
+    background-color: #F79E6B;
     color: #FFFFFF;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    height: 15vh;
-    padding: 5vh 10vw 5vh 10vw;
+    height: 5vh;
+    padding: 5vh 20vh 5vh 40vh;
 }
 
 .footer-col {
     width: 30vw;
 }
 
-h4 {
-    margin-bottom: 3vh;
-}
 
 .footer-col a {
     display: block;
-}
-
-/*------SOCAILS--------*/
-.social {
-    margin: 0;
-    padding: 0;
-    min-width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.social__link {
-    list-style-type: none;
-    margin: 0;
-}
-
-.social__icon {
     text-decoration: none;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.social_header .social__icon {
-    background-color: #f3b201;
-    opacity: 0.8;
-}
-
-.social_footer .social__icon {
-    background-color: #464646;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-}
-
-.social_header .social__icon:hover {
-    background-color: #464646;
-    transition: all 0.3s ease-in-out;
-}
-
-.social_footer .social__icon:hover {
-    background-color: #f3b201;
-    transition: all 0.3s ease-in-out;
-}
-
-.icon-instagram {
-    background-image: url(./Images/icon-insta.svg);
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.icon-facebook {
-    background-image: url(./Images/icon-facebook.svg);
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.icon-twitter {
-    background-image: url(./Images/icon-twitter.svg);
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.socials-container {
-    padding: 3vh 30vw 3vh 30vw;
-    background-color: #f27289;
-    background-color: ;
-    height: 7vh;
-}
-
-.tighter-container {
-    position: absolute;
-    margin-left: 13vw;
+    color: black;
 }
